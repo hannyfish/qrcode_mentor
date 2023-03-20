@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+  
+:root {--white: hsl(0, 0%, 100%);
+--lightgray: hsl(212, 45%, 89%);
+--gblue: hsl(220, 15%, 55%);
+--dblue: hsl(218, 44%, 22%);}
+
+.body {background: var(--lightgray); width: 100%; height: 100%; padding: 100px 0; }
+
+.qrcode-bg {position: relative;width: 280px; height: 450px; background: var(--white); border-radius: 15px 15px; padding: 30px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; box-shadow: 0 3px 10px var(--gblue);}
+
+.qrcode-img {background-image: url(https://img.nickpic.host/QQ3pus.png); height: 300px; width: 300px; position: center; background-size: cover; object-fit: cover;border-radius: 15px 15px; }
+
+.qrcode-bg b {font-family: 'Outfit',sans-serif; font-weight: 700; color: var(--dblue); font-size: 20px; text-align: center; margin: 20px;}
+
+.qrcode-bg font {font-family: 'Outfit',sans-serif; color: var(--gblue); text-align: center;font-size: 15px;}
+
+@media only screen and (max-width: 375px) {
+  .body {width: 100%;}
+  .qrcode-bg{width: 100%;}
+  
+}
